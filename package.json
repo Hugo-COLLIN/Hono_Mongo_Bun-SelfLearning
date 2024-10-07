@@ -1,7 +1,7 @@
 {
   "name": "Hono_Mongo_Bun-SelfLearning",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/learn.js"
   },
   "dependencies": {
     "hono": "^4.6.3",

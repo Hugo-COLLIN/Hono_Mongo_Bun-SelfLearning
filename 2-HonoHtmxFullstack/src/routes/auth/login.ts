@@ -6,4 +6,8 @@ hono.get('/', (c) => {
   return c.text('Hello Login Page');
 });
 
+hono.post('/', (c) => {
+  return c.redirect("/app")
+});
+
 export default hono;

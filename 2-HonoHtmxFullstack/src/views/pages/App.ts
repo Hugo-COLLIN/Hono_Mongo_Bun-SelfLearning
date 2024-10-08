@@ -1,11 +1,10 @@
 import { html } from 'hono/html';
+import Title from "../components/Title";
 
-type HtmlEscapedString = string; // HtmlEscapedString replacement as it's not exposed by hono/html
-
-export default function Layout({ title, content } : { title: string, content: (HtmlEscapedString | Promise<HtmlEscapedString>) }) {
+export default function App() {
   return html`
     <div>
-      <h1>Hello</h1>
+      ${Title({ title: 'App', primary: true })}
       <p>Welcome to the app</p>
     </div>
   `;

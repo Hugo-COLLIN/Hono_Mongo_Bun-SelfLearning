@@ -1,9 +1,10 @@
 import { html } from 'hono/html';
+import Title from "../components/Title";
 
 export default function Landing() {
   return html`
     <div class="container">
-      <h1>Welcome to HonoHtmxFullstack</h1>
+      ${Title({ title: 'App'})}
       <p>
         This is a fullstack example using Hono, Htmx, and Alpine. 
         It demonstrates how to create a simple fullstack application using Hono and Htmx.
